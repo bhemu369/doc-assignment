@@ -1,0 +1,203 @@
+.container {
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.formContainer {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.formRow {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .formRow {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.formGroup label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.input,
+.select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+}
+
+.input:focus,
+.select:focus {
+    outline: none;
+    border-color: #ff6f61;
+}
+
+.checkboxContainer {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    user-select: none;
+    color: #555;
+    font-weight: 500;
+}
+
+.checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.checkboxContainer:hover input~.checkmark {
+    background-color: #f9f9f9;
+}
+
+.checkboxContainer input:checked~.checkmark {
+    background-color: #ff6f61;
+    border-color: #ff6f61;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkboxContainer input:checked~.checkmark:after {
+    display: block;
+}
+
+.checkboxContainer .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.submitButton,
+.cancelButton {
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    flex: 1;
+}
+
+.submitButton {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+}
+
+.submitButton:hover {
+    background-color: #e05d50;
+}
+
+.submitButton:disabled {
+    background-color: #ffaa9f;
+    cursor: not-allowed;
+}
+
+.cancelButton {
+    background-color: white;
+    color: #555;
+    border: 1px solid #ddd;
+}
+
+.cancelButton:hover {
+    background-color: #f2f2f2;
+}
+
+.cancelButton:disabled {
+    color: #999;
+    cursor: not-allowed;
+}
+
+.successMessage,
+.errorMessage {
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.successMessage {
+    background-color: #e6f7e6;
+    color: #28a745;
+    border: 1px solid #c3e6cb;
+}
+
+.errorMessage {
+    background-color: #f8d7da;
+    color: #dc3545;
+    border: 1px solid #f5c6cb;
+}

@@ -1,0 +1,153 @@
+.doctorCard {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.doctorCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.doctorInfo {
+    display: flex;
+    flex: 3;
+}
+
+.doctorImageContainer {
+    width: 80px;
+    height: 80px;
+    margin-right: 16px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.doctorImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.doctorDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.doctorName {
+    margin: 0 0 4px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.doctorSpecialty {
+    margin: 0 0 6px;
+    font-size: 14px;
+    color: #666;
+}
+
+.doctorMeta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.doctorExperience {
+    font-size: 14px;
+    color: #555;
+}
+
+.separator {
+    margin: 0 8px;
+    color: #ccc;
+}
+
+.doctorQualifications {
+    font-size: 14px;
+    color: #555;
+}
+
+.doctorLocation,
+.doctorClinic {
+    margin: 0 0 4px;
+    font-size: 14px;
+    color: #666;
+}
+
+.ratingContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.ratingValue {
+    font-size: 14px;
+    font-weight: 500;
+    color: #28a745;
+    margin-right: 4px;
+}
+
+.patientCount {
+    font-size: 13px;
+    color: #666;
+}
+
+.doctorActions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex: 1;
+    padding-left: 16px;
+    border-left: 1px solid #eee;
+}
+
+.priceSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.cashback {
+    font-size: 13px;
+    color: #28a745;
+    margin-top: 2px;
+}
+
+.consultButton {
+    width: 100%;
+    padding: 10px 16px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-bottom: 10px;
+}
+
+.consultButton:hover {
+    background-color: #e05d50;
+}
+
+.availabilityInfo {
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+    width: 100%;
+}
