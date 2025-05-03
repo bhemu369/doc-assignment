@@ -1,6 +1,6 @@
 // API service for doctor listing app
 
-const API_BASE_URL = 'http://localhost:4000/api';
+const API_BASE_URL = 'https://doc-assignment-beck.vercel.app/api';
 
 // Function to fetch doctors with filters and pagination
 export const fetchDoctors = async (filters = {}, page = 1, limit = 10) => {
